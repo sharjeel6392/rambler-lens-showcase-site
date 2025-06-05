@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Camera, Mail, Instagram, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -56,7 +55,26 @@ const Index = () => {
     }
   ];
 
-  const featuredImages = portfolioImages.slice(0, 3);
+  const featuredImages = [
+    {
+      id: 1,
+      src: "/lovable-uploads/9c5c06f6-489d-42b0-9248-6340e2b3024a.png",
+      title: "Coastal Majesty",
+      category: "seascapes"
+    },
+    {
+      id: 2,
+      src: "/lovable-uploads/57addf1f-22e9-4831-8b47-cbd3654aadd7.png",
+      title: "Rolling Hills",
+      category: "landscapes"
+    },
+    {
+      id: 3,
+      src: "/lovable-uploads/c88839cb-02b1-461e-923d-f47754d57484.png",
+      title: "Misty Cliffs",
+      category: "seascapes"
+    }
+  ];
 
   const handleContactSubmit = (e: React.FormEvent) => {
     e.preventDefault();
