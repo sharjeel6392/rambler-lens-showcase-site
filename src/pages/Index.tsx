@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Camera, Mail, Instagram, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -127,13 +128,13 @@ const Index = () => {
           {featuredImages.map((image, index) => (
             <div
               key={image.id}
-              className="group relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500"
+              className="group relative overflow-hidden rounded-2xl shadow-2xl transform hover:scale-105 transition-all duration-500 bg-transparent"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <img
                 src={image.src}
                 alt={image.title}
-                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
+                className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700 border-0"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
